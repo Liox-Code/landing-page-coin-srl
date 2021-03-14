@@ -1,0 +1,9 @@
+#Carpetas
+assets/icon
+assets/images
+
+#Extensiones
+*.jpg
+*.jpeg
+*.png
+*.svg
