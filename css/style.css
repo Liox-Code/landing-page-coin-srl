@@ -33,7 +33,7 @@ html{
 header{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 .main-contact-information{
@@ -113,7 +113,7 @@ nav{
 }
 
 main{
-    width: 100vw;
+    width: 100%;
     padding-top: 15px;
 }
 
@@ -276,6 +276,88 @@ main{
     margin-left: 10px;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.contact-information--title{
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+}
+
+.contact-information--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+}
+
+.contact-information--row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-information--icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-information--data{
+    min-width: 280px;
+    max-width: 280px;
+    margin-left: 5px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--white);
+}
+
+.social-media-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.company-name{
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.4rem;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.social-media-links{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.social-media-link{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /*Modificardor*/
 
 .contaduria-first-image{
@@ -320,12 +402,55 @@ main{
     background-repeat: no-repeat;
 }
 
+.facebook-icon{
+    background-image: url('../assets/icon/facebook-icon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.linkedin-icon{
+    background-image: url('../assets/icon/linkedin-icon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.location-icon{
+    background-image: url('../assets/icon/location-icon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mail-icon{
+    background-image: url('../assets/icon/mail-icon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.phone-icon{
+    background-image: url('../assets/icon/phone-icon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .right-arrow-icon{
     background-image: url('../assets/icon/right-arrow-icon.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.twitter-icon{
+    background-image: url('../assets/icon/twitter-icon.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .background-color-blue{
     background-color: var(--blue);
@@ -334,6 +459,11 @@ main{
 
 .background-color-green{
     background-color: var(--green);
+    color: var(--white);
+}
+
+.background-color-dark-blue{
+    background-color: var(--dark-blue);
     color: var(--white);
 }
 
