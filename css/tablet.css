@@ -2,12 +2,12 @@
     justify-content: center;
     width: 20%;
     min-width: 100px;
-    height: 40px;
+    height: 50px;
 }
 
 .logo-icon{
-    width: 150px;
-    height: 27px;
+    width: 40px;
+    height: 40px;
 }
 
 .menu-container{
@@ -21,12 +21,16 @@ nav{
 
 .nav-tab{
     border-top: none;
-    height: 40px;
-    font-size: 2.4rem;
+    height: 50px;
+    font-size: 1.6rem;
 }
 
 .nav-tab{
     border-top: none;
+}
+
+.background-image{
+    background-image: url('../assets/images/contaduria-imagen-1-medium.jpg');
 }
 
 .service-container{

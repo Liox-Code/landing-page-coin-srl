@@ -1,23 +1,19 @@
 :root{
     /*Colors*/
     /*Hexadecimal*/
-    --blue: #4395BB;
-    --dark-blue: #3D85A7;
-    --green: #42BB9A;
-    --dark-green: #2e967a;
-    --white: #FAFAFAff;
-    --raising-black: #201E1C;
+    --orange: #EF7C19;
+    --light-orange: #ec8d39;
+    --black: #13161F;
+    --dark-black: #0A0D13;
+    --white: #FFFFFF;
+    --grey: #9D9D9D;
 
     /*RGBA*/
 
-    --blue-opacity-5:rgba(67, 149, 187, 0.5);
-    --dark-blu-opacity-5:rgba(61, 133, 167, 0.5);
-    --green-opacity-5:rgba(66, 187, 154, 0.5);
-    --white-opacity-5:rgba(250, 250, 250, 0.5);
-    --raising-black-opacity-5:rgba(32, 30, 28, 0.5);
-
-    --blue-opacity-6:rgba(67, 149, 187, 0.6);
-    --green-opacity-6:rgba(66, 187, 154, 0.6);
+    --orange-opacity-5:rgba(239, 124, 25, 0.5);
+    --black-opacity-5:rgba(19, 22, 31, 0.5);
+    --dark-black-opacity-5:rgba(10, 13, 19, 0.5);
+    --white-opacity-5:rgba(255, 255, 255, 0.5);
 
     /*Fonts*/
     --primary-font: Arial, Helvetica, sans-serif;
@@ -32,6 +28,7 @@
 html{
     font-size: 62.5%;
     font-family: var(--primary-font);
+    color: var(--black);
 }
 
 header{
@@ -39,7 +36,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: var(--blue);
+    background-color: var(--black);
 }
 
 .main-contact-information{
@@ -54,12 +51,12 @@ header{
     display: flex;
     align-items: center;
     width: 50%;
-    height: 30px;
+    height: 50px;
 }
 
 .logo-icon{
-    width: 100px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
 }
 
 .menu-container{
@@ -67,12 +64,12 @@ header{
     justify-content: flex-end;
     align-items: center;
     width: 50%;
-    height: 30px;
+    height: 50px;
 }
 
 .menu-icon{
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
 }
 
 nav{
@@ -89,15 +86,14 @@ nav{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30px;
+    height: 35px;
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--white);
-    border-top: 1px solid var(--white);
 }
 
 .nav-tab:hover{
-    background-color: var(--dark-blue);
+    color: var(--orange);
 }
 
 .background-image{
@@ -122,25 +118,17 @@ nav{
     height: 40px;
     border-radius: 5px;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
-    box-shadow:  0px 4px 8px var(--raising-black-opacity-5);
+    box-shadow:  0px 4px 8px var(--black-opacity-5);
 }
 
 .call-to-action:hover{
-    background-color: var(--dark-green);
-}
-
-.icon-down-arrow{
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    margin-left: 10px;
+    background-color: var(--dark-black);
 }
 
 main{
     width: 100%;
-    padding-top: 15px;
 }
 
 .main-coinser-srl-info{
@@ -188,8 +176,7 @@ main{
 .coinser-srl-info--description{
     width: 80%;
     min-width: 256px;
-    margin-top: 15px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
@@ -225,11 +212,11 @@ main{
 .title-container--title{
     font-size: 2.4rem;
     margin-bottom: 10px;
-    color: var(--blue);
+    color: var(--orange);
 }
 
 .title-container--title-description{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .result-container{
@@ -237,8 +224,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(50% - 40px);
-    min-width: 160px;
+    width: calc(50% - 20px);
+    min-width: 140px;
     max-width: 360px;
     min-height: 160px;
     margin-top: 20px;
@@ -247,16 +234,16 @@ main{
     margin-right: 10px;
     text-align: center;
     border-radius: 15px;
-    box-shadow:  0px 4px 8px var(--raising-black-opacity-5);
+    box-shadow:  0px 4px 8px var(--black-opacity-5);
 }
 
 .result-container--porcentaje{
     font-size: 4.4rem;
-    color: var(--blue);
+    color: var(--orange);
 }
 
 .result-container--description{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .main-services{
@@ -326,7 +313,7 @@ main{
 }
 
 .service-container--description{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--white);
 }
 
@@ -340,7 +327,7 @@ main{
     height: 40px;
     border: none;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
 }
 
@@ -366,10 +353,16 @@ footer{
     height: auto;
 }
 
+.coinser-srl-imagotipo{
+    width: 273px;
+    height: 121px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .contact-information-container{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
@@ -419,7 +412,7 @@ footer{
 
 .contact-information--data{
     margin-left: 5px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .social-media-container{
@@ -439,7 +432,7 @@ footer{
 }
 
 .company-name{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 7px;
     margin-bottom: 7px;
     text-align: center;
@@ -460,6 +453,26 @@ footer{
 }
 
 /*Modificardor*/
+.analisys-icon{
+    background-image: url('../assets/icon/analysis-icon-orange.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clock-icon{
+    background-image: url('../assets/icon/clock-icon-orange.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.coin-money-currency-icon{
+    background-image: url('../assets/icon/coin-money-currency-icon-black.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .contaduria-first-image{
     background-image: url('../assets/images/contaduria-imagen-1-small.jpg');
@@ -475,134 +488,156 @@ footer{
     background-repeat: no-repeat;
 }
 
-.logo-image{
-    background-image: url('../assets/images/press-start-logo.png');
+.dollar-sign-orange{
+    background-image: url('../assets/icon/dollar-sign-orange.svg');
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.analisys-icon{
-    background-image: url('../assets/icon/analysis-icon.svg');
-    background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .down-arrow-icon{
-    background-image: url('../assets/icon/down-arrow.svg');
+    background-image: url('../assets/icon/down-arrow-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .eye-icon{
-    background-image: url('../assets/icon/eye.svg');
+    background-image: url('../assets/icon/eye-black.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .facebook-icon{
-    background-image: url('../assets/icon/facebook-icon.svg');
+    background-image: url('../assets/icon/facebook-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.isotipo-image{
+    background-image: url('../assets/images/isotipo.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imagotipo-image{
+    background-image: url('../assets/images/logo-white-text.svg');
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .linkedin-icon{
-    background-image: url('../assets/icon/linkedin-icon.svg');
+    background-image: url('../assets/icon/linkedin-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .location-icon{
-    background-image: url('../assets/icon/location-icon.svg');
+    background-image: url('../assets/icon/location-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .mail-icon{
-    background-image: url('../assets/icon/mail-icon.svg');
+    background-image: url('../assets/icon/mail-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pay-cash-icon{
+    background-image: url('../assets/icon/pay-cash-icon-black.svg');
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .phone-icon{
-    background-image: url('../assets/icon/phone-icon.svg');
+    background-image: url('../assets/icon/phone-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .right-arrow-icon{
-    background-image: url('../assets/icon/right-arrow-icon.svg');
+    background-image: url('../assets/icon/right-arrow-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tax-icon{
+    background-image: url('../assets/icon/tax-icon-orange.svg');
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .twitter-icon{
-    background-image: url('../assets/icon/twitter-icon.svg');
+    background-image: url('../assets/icon/twitter-icon-white.svg');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-.background-color-blue{
-    background-color: var(--blue);
-    color: var(--white);
+.background-color-orange{
+    background-color: var(--orange);
 }
 
-.background-color-green{
-    background-color: var(--green);
-    color: var(--white);
+.background-color-black{
+    background-color: var(--black);
 }
 
-.background-color-dark-blue{
-    background-color: var(--dark-blue);
-    color: var(--white);
+.background-color-dark-black{
+    background-color: var(--dark-black);
 }
 
 .background-color-white{
     background-color: var(--white);
 }
 
-.background-color-transparent-blue{
-    background: var(--blue-opacity-5);
-    color: var(--white);
+.background-color-transparent-orange{
+    background: var(--orange-opacity-5);
 }
 
-.background-color-transparent-green{
-    background: var(--green-opacity-5);
-    color: var(--white);
+.background-color-transparent-black{
+    background: var(--black-opacity-5);
 }
 
-.background-color-hover-dark-blue:hover{
-    background-color: var(--dark-blue);
-    color: var(--white);
+.background-color-hover-orange:hover{
+    background-color: var(--light-orange);
 }
 
-.background-color-hover-dark-green:hover{
-    background-color: var(--dark-green);
-    color: var(--white);
+.background-color-hover-dark-black:hover{
+    background-color: var(--dark-black);
 }
 
-.button-blue-shadow{
-    box-shadow: 0px 4px 8px var(--raising-black-opacity-5);
+.button-orange-shadow{
+    box-shadow: 0px 4px 8px var(--orange-opacity-5);
 }
 
-.button-green-shadow{
-    box-shadow:  0px 4px 8px var(--raising-black-opacity-5);
+.button-black-shadow{
+    box-shadow:  0px 4px 8px var(--black-opacity-5);
 }
 
-.text-color-blue{
-    color: var(--blue);
+.text-color-orange{
+    color: var(--orange);
+}
+
+.text-color-black{
+    color: var(--black);
 }
 
 .text-color-white{
     color: var(--white);
+}
+
+.text-color-grey{
+    color: var(--grey);
 }
