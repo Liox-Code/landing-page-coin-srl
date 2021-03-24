@@ -35,7 +35,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 2;
     background-color: var(--black);
 }
 
@@ -45,6 +48,7 @@ header{
     flex-wrap: wrap;
     padding-left: 4px;
     padding-right: 4px;
+    background-color: var(--black);
 }
 
 .logo-container{
@@ -78,7 +82,6 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .nav-tab{
@@ -97,7 +100,6 @@ nav{
 }
 
 .background-image{
-    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -153,6 +155,8 @@ main{
     align-items: center;
     justify-content: center;
     max-width: 1200px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .coinser-srl-info--icon{
@@ -174,7 +178,6 @@ main{
 }
 
 .coinser-srl-info--description{
-    width: 80%;
     min-width: 256px;
     font-size: 1.6rem;
     font-weight: 300;
@@ -203,8 +206,8 @@ main{
     align-items: center;
     width: 100%;
     height: 160px;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 4px;
+    padding-left: 4px;
     text-align: center;
     background-color: var(--white);
 }
@@ -219,19 +222,27 @@ main{
     font-size: 1.6rem;
 }
 
+.results-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .result-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(50% - 20px);
     min-width: 140px;
     max-width: 360px;
     min-height: 160px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
     text-align: center;
     border-radius: 15px;
     box-shadow:  0px 4px 8px var(--black-opacity-5);
@@ -354,7 +365,8 @@ footer{
 }
 
 .coinser-srl-imagotipo{
-    width: 273px;
+    width: 100%;
+    max-width: 320px;
     height: 121px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -380,8 +392,10 @@ footer{
 }
 
 .contact-information--title{
-    width: 94%;
+    width: 100%;
     max-width: 400px;
+    padding-right: 4px;
+    padding-left: 4px;
     margin-bottom: 10px;
     font-size: 1.6rem;
 }
@@ -390,8 +404,10 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 94%;
+    width: 100%;
     max-width: 400px;
+    padding-right: 4px;
+    padding-left: 4px;
     height: auto;
     min-height: 80px;
 }
@@ -404,6 +420,13 @@ footer{
     margin-bottom: 5px;
 }
 
+.icon-container{
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+}
+
 .contact-information--icon{
     display: inline-block;
     width: 20px;
@@ -413,6 +436,24 @@ footer{
 .contact-information--data{
     margin-left: 5px;
     font-size: 1.6rem;
+}
+
+.main-location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.location-container{
+    width: 100%;
+    max-width: 1200px;
+}
+
+#map{
+    height: 450px;
+    width: 100%;
 }
 
 .social-media-container{

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1200px)">
+    <script src="js/google-maps.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClqRiwwIqeVdwdn7W1UZ-VoJrIbYEfV3k&callback=initMap">
+    </script>
 </head>
 <body>
      <header>
@@ -22,12 +26,13 @@
                 <a href="#main-informacion" class="nav-tab">Informacion</a>
                 <a href="#main-resultados" class="nav-tab">Resultados</a>
                 <a href="#main-services" class="nav-tab">Servicios</a>
+                <a href="#main-location" class="nav-tab">Localisacion</a>
                 <a href="#main-contactanos" class="nav-tab">Contactanos</a>
             </nav>
         </section>
-        <div class="background-image"></div>
     </header>
     <main>
+        <div class="background-image"></div>
          <section class="main-coinser-srl-info" id="main-informacion">
             <article class="coinser-srl-info background-color-white">
                 <div class="coinser-srl-info-container">
@@ -55,33 +60,35 @@
                         RESULTADOS
                     </h2>
                     <p class="title-container--title-description">
-                        Resultados que asdasdsds en la empresa para ksad askdj aksd alsd asld jaslkdj.
+                        Resultados que asdasdsds en la empresa para ksad asks que asdasdsds en la empresa para ksad askdj aksd alsd asld jaslkdj.
                     </p>
                 </div>
-                <article class="result-container">
-                    <p class="result-container--porcentaje"> 300% </p>
-                    <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
-                </article>
-                <article class="result-container">
-                    <p class="result-container--porcentaje"> 300% </p>
-                    <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
-                </article>
-                <article class="result-container">
-                    <p class="result-container--porcentaje"> 300% </p>
-                    <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
-                </article>
-                <article class="result-container">
-                    <p class="result-container--porcentaje"> 300% </p>
-                    <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
-                </article>
-                <article class="result-container">
-                    <p class="result-container--porcentaje"> 300% </p>
-                    <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
-                </article>
-                <article class="result-container">
-                    <p class="result-container--porcentaje"> 300% </p>
-                    <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
-                </article>
+                <div class="results-container">
+                    <article class="result-container">
+                        <p class="result-container--porcentaje"> 300% </p>
+                        <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
+                    </article>
+                    <article class="result-container">
+                        <p class="result-container--porcentaje"> 300% </p>
+                        <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
+                    </article>
+                    <article class="result-container">
+                        <p class="result-container--porcentaje"> 300% </p>
+                        <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
+                    </article>
+                    <article class="result-container">
+                        <p class="result-container--porcentaje"> 300% </p>
+                        <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
+                    </article>
+                    <article class="result-container">
+                        <p class="result-container--porcentaje"> 300% </p>
+                        <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
+                    </article>
+                    <article class="result-container">
+                        <p class="result-container--porcentaje"> 300% </p>
+                        <p class="result-container--description"> Improvement in lead conversation rfesf. </p>
+                    </article>
+                </div>
             </div>
         </section>
          <section class="main-services" id="main-services">
@@ -150,6 +157,20 @@
                 </article>
              </div>
         </section>
+        
+        <section class="main-location" id="main-location">
+            <div class="location-container">
+                <div class="title-container">
+                    <h2 class="title-container--title">
+                        Localisacion
+                    </h2>
+                    <p class="title-container--title-description">
+                        Localisacion que asdasdsds en la empresa para ksad askdj aksd alsd asld jaslkdj.
+                    </p>
+                </div>
+                <div id="map"></div>
+            </div>
+        </section>
     </main>
     <footer class="background-color-black">
         <span class="coinser-srl-imagotipo imagotipo-image"></span>
@@ -158,19 +179,25 @@
                 <h2 class="contact-information--title text-color-white">CONTACTANOS</h2>
                 <div class="contact-information--table">
                     <div class="contact-information--row">
-                        <span class="contact-information--icon location-icon"></span>
+                        <div class="icon-container">
+                            <span class="contact-information--icon location-icon"></span>
+                        </div>
                         <p class="contact-information--data text-color-grey">
                             Calle eucalypt esquina sauces , 1660 Santa Cruz, Bolivia
                         </p>
                     </div>
                     <div class="contact-information--row">
-                        <span class="contact-information--icon mail-icon"></span>
+                        <div class="icon-container">
+                            <span class="contact-information--icon mail-icon"></span>
+                        </div>
                         <p class="contact-information--data text-color-grey">
                             Leonardo.Mendieta@gmail.com
                         </p>
                     </div>
                     <div class="contact-information--row">
-                        <span class="contact-information--icon phone-icon"></span>
+                        <div class="icon-container">
+                            <span class="contact-information--icon phone-icon"></span>
+                        </div>
                         <p class="contact-information--data text-color-grey">
                             +591 2525353
                         </p>
@@ -181,19 +208,25 @@
                 <h2 class="contact-information--title text-color-white">CONTACTANOS</h2>
                 <div class="contact-information--table">
                     <div class="contact-information--row">
-                        <span class="contact-information--icon location-icon"></span>
+                        <div class="icon-container">
+                            <span class="contact-information--icon location-icon"></span>
+                        </div>
                         <p class="contact-information--data text-color-grey">
                             Calle eucalypt esquina sauces , 1660 Santa Cruz, Bolivia
                         </p>
                     </div>
                     <div class="contact-information--row">
-                        <span class="contact-information--icon mail-icon"></span>
+                        <div class="icon-container">
+                            <span class="contact-information--icon mail-icon"></span>
+                        </div>
                         <p class="contact-information--data text-color-grey">
                             Leonardo.Mendieta@gmail.com
                         </p>
                     </div>
                     <div class="contact-information--row">
-                        <span class="contact-information--icon phone-icon"></span>
+                        <div class="icon-container">
+                            <span class="contact-information--icon phone-icon"></span>
+                        </div>
                         <p class="contact-information--data text-color-grey">
                             +591 2525353
                         </p>
